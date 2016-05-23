@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+</head>
+<body>
+
+<h1>Select by Building:</h1>
+<ul>
+{%for n in build%}
+
+    <a href="/{{n.id}}"><li>{{n.building}}</li></a>
+
+
+{% endfor %}
+</ul>
+
+
+
+
+</body>
+</html>

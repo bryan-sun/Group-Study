@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+</head>
+<body>
+
+<h1>Classes:</h1>
+{%for n in class%}
+
+   <li>{{n.className}}</li>
+
+
+{% endfor %}
+
+
+<h1>Info:</h1>
+
+{%for n in student%}
+
+<li>{{n.firstName}}</li>
+<li>{{n.lastName}}</li>
+<li>{{n.number}}</li>
+{% endfor %}
+
+<h1>Currently Doing:</h1>
+{%for n in cur%}
+
+<li>{{n.subject}}</li>
+
+{% for z in n.topic.all %}
+
+<li>{{z.type}}</li>
+
+{% endfor %}
+
+
+{% endfor %}
+
+
+
+
+</body>
+</html>
